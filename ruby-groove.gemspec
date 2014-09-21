@@ -2,6 +2,7 @@
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'groove/version'
+require 'rake'
 
 Gem::Specification.new do |spec|
   spec.name          = 'ruby-groove'
@@ -11,13 +12,12 @@ Gem::Specification.new do |spec|
   spec.summary       = 'FFI bindings to libgroove'
   spec.homepage      = 'http://github.com/johnmuhl/ruby-groove'
   spec.license       = 'MIT'
-
-  spec.files         = `git ls-files -z`.split("\x0")
-  spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
+  spec.files         = FileList['lib/**/*.rb',
+                                'test/**/*.rb',
+                                'LICENSE.txt',
+                                'README.md']
   spec.require_paths = ['lib']
-
   spec.add_runtime_dependency 'ffi', '~> 1.9'
-
   spec.add_development_dependency 'bundler', '~> 1.7'
   spec.add_development_dependency 'ffi_gen', '~> 1.1'
   spec.add_development_dependency 'rake', '~> 10.0'
