@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = Groove::VERSION
   spec.authors       = ['john muhl']
   spec.email         = ['me@johnmuhl.com']
-  spec.summary       = 'bindings to libgroove'
+  spec.summary       = 'FFI bindings to libgroove'
   spec.homepage      = 'http://github.com/johnmuhl/ruby-groove'
   spec.license       = 'MIT'
 
