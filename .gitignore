@@ -1,0 +1,4 @@
+.vagrant/
+.yardoc/
+Gemfile.lock
+doc/
