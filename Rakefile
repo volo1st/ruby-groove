@@ -3,18 +3,6 @@ require 'yard'
 
 YARD::Rake::YardocTask.new
 
-# I can’t get this to work on a Mac.
-# For now use the Vagrantfile to boot Ubuntu and run:
-# sudo apt-add-repository ppa:andrewrk/libgroove
-# sudo apt-get update
-# sudo apt-get install libgroove-dev libgrooveplayer-dev libgrooveloudness-dev libgroovefingerprinter-dev
-# sudo apt-get install ruby ruby-dev
-# sudo apt-get install clang libclang-dev llvm llvm-dev
-# sudo ln -sv /usr/lib/llvm-3.4/lib/libclang.so /usr/lib/libclang.so
-# sudo gem install bundler
-# cd /vagrant
-# bundle install
-# rake generate_ffi
 desc 'Generate FFI bindings'
 task :generate_ffi do
   require 'ffi_gen'
