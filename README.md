@@ -14,32 +14,37 @@ Ubuntu, FreeBSD and Debian users can use a [pre-built package][packages].
 
 #### Mac OS X
 
-1. Install dependencies from [Homebrew][brew]
-    ~~~ sh
-    brew install chromaprint
-    brew install libav --with-libvorbis --with-speex
-    brew install sdl2
-    ~~~
-2. Install [libebur128][libebur128] from source
-    ~~~ sh
-    git clone https://github.com/jiixyj/libebur128
-    cd libebur128
-    mkdir build
-    cd build
-    cmake ..
-    make
-    make install
-    ~~~
-3. Install [libgroove][libgroove] from source
-    ~~~ sh
-    git clone https://github.com/andrewrk/libgroove
-    cd libgroove
-    mkdir build
-    cd build
-    cmake ..
-    make
-    make install
-    ~~~
+Install dependencies from [Homebrew][brew]
+
+~~~ sh
+brew install chromaprint
+brew install libav --with-libvorbis --with-speex
+brew install sdl2
+~~~
+
+Install [libebur128][libebur128] from source
+
+~~~ sh
+git clone https://github.com/jiixyj/libebur128
+cd libebur128
+mkdir build
+cd build
+cmake ..
+make
+make install
+~~~
+
+Install [libgroove][libgroove] from source
+
+~~~ sh
+git clone https://github.com/andrewrk/libgroove
+cd libgroove
+mkdir build
+cd build
+cmake ..
+make
+make install
+~~~
 
 ## Usage
 
