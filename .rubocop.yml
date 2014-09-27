@@ -1,0 +1,9 @@
+AllCops:
+  Exclude:
+    - "lib/groove/fingerprinter.rb"
+    - "lib/groove/groove.rb"
+    - "lib/groove/loudness.rb"
+    - "lib/groove/player.rb"
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
