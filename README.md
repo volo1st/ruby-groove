@@ -1,25 +1,10 @@
-ruby bindings to [libgroove][libgroove].
+Ruby bindings to [libgroove][libgroove].
 
 ## Installation
 
-First install [libgroove][libgroove] (see below) then:
+First [install libgroove][libgroove-install] then:
 
     gem install ruby-groove
-
-### libgroove
-
-#### Ubuntu, FreeBSD and Debian
-
-Ubuntu, FreeBSD and Debian users can use a [pre-built package][packages].
-
-#### Mac OS X
-
-Install with [Homebrew][brew]
-
-~~~ sh
-brew tap johnmuhl/libgroove
-brew install libgroove
-~~~
 
 ## Usage
 
@@ -64,5 +49,6 @@ Bindings are output to `lib`.
 [ffi_gen]: https://github.com/neelance/ffi-gen
 [libebur128]: https://github.com/jiixyj/libebur128
 [libgroove]: https://github.com/andrewrk/libgroove
+[libgroove-install]: https://github.com/andrewrk/libgroove#installation
 [packages]: https://github.com/andrewrk/libgroove#pre-built-packages
 [vagrant]: http://www.vagrantup.com/
